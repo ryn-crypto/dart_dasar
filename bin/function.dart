@@ -10,13 +10,13 @@ void main(List<String> args) {
   int luas = luasSegiEmpat(panjang, lebar);
   print(
       'luas dari bangunan dengan panjang $panjang dan lebar $lebar luasnya adalah $luas');
-  
+
   // menjalankan funsi dengan parameter bernama
   print('========= fungsi dengan parameter bernama ==========');
 
   print(say(from: 'riyan', message: 'apa_kabar'));
 
-    // menjalankan funsi dengan optional parameter
+  // menjalankan funsi dengan optional parameter
   print('========= fungsi dengan optional parameter ========');
   print(sapa('riyan'));
   print(sapa('andi', 'hai apa kabar?'));
@@ -25,8 +25,18 @@ void main(List<String> args) {
   print('======= fungsi dengan parameter default value ====');
   print(salam('riyan'));
   print(salam('budi', 'hallo lagi sibuk apa ?'));
-}
 
+  // menjalankan function arrow
+  print(luasKubus(45));
+
+  // memasukan function kedalam variable
+  Function lk = luasKubus;
+  print(lk(45));
+
+  // menggunakan function untuk parameter
+  print(pp(3, 4, (a, b) => a * b));
+
+}
 
 // ---------------- pembuatan funsi -------------------------
 // fungsi dasar
@@ -47,4 +57,12 @@ String sapa(String nama, [String pesan]) {
 // fungsi dengan default parameter menggunakan = pada parameter untuk mengisikan default value
 String salam(String name, [String salam = 'Assalamualaikum']) {
   return ('$name mengucapkan $salam');
+}
+
+// arrow function / lambda
+int luasKubus(int sisi) => sisi * sisi;
+
+// function sebagai operator
+int pp(int panjang, int lebar, Function operator) {
+  return operator(panjang, lebar);
 }
