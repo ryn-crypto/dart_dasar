@@ -20,4 +20,19 @@ void main(List<String> args) {
     print('ini adalah pengualagan ke -$x');
     x++;
   } while (x < 5);
+
+  // untuk penggunaan ++ dan -- bisa di depan dan di belakang variable
+
+  print('===================');
+
+  int a, b, c, d;
+  a = 10;
+  b = ++a;
+  c = 11;
+  d = c++;
+
+  print('nilai a adalah = $a');
+  print('nilai b adalah = $b');
+  print('nilai c adalah = $c');
+  print('nilai d adalah = $d');
 }
