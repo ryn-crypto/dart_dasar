@@ -1,5 +1,3 @@
-import 'dart:io';
-
 void main(List<String> args) {
   // object adalah amninfestasi dari class
   PersegiPanjang kotak1, kotak2;
