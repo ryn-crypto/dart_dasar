@@ -16,8 +16,8 @@ void main(List<String> args) {
   kotak2.setPanjang(4);
   kotak2.lebar = 6;
 
-  luaskotak1 = kotak1.luas();
-  luaskotak2 = kotak2.luas();
+  luaskotak1 = kotak1.luas;
+  luaskotak2 = kotak2.luas;
 
   // untuk mengambil data yang sudah kita set maka menggunakan geter
   print('panjang kotak ke-1 adalah ' + (kotak1.getPanjang().toString()) + 'cm dan lebarnya adalah ' + (kotak1.lebar).toString() + 'cm');

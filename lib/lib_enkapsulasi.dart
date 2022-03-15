@@ -32,7 +32,14 @@ class PersegiPanjang {
     return _lebar;
   }
 
-  int luas() {
+  int hitungLuas() {
     return _panjang * _lebar;
   }
+
+  int get luas => _panjang * _lebar;
 }
+
+
+// keguanaan enkapsulasi adalah untuk membungkus dari dunia luar
+// jika hanya ingin bisa dilihat saja maka hanya buat get
+// jika hanya ingin bisa diset saja maka hanya buat set 
