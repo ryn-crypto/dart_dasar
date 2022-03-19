@@ -28,6 +28,9 @@ void main(List<String> args) {
   monster.add(MonsterKecoa());
   monster.add(MonsterUcoa());
 
+  // membuat variabel dari class yang sudah didefinisikan
+  Knight s = Knight();
+
   for (Monster m in monster) {
     print(m.move());
     print(m.eatHuman());
@@ -36,6 +39,8 @@ void main(List<String> args) {
       print((m as FlyingMonster).fly());
     }
   }
+
+  print(s.drink());
 }
 
 // package lib :  hero, monster, parent

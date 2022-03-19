@@ -47,4 +47,6 @@ class MonsterUcoa extends MonsterUburUbur implements FlyingMonster {
 
 // beda extend dan impelement adalah pada jumlah keturunannya 
 // jika extend hanya pada satu parent
-// jika implement bisa banyak 
+// jika implement (interface) bisa banyak 
+// mixin adalah implemant yang bisa menambah method pada class turunan beserta fungsinya
+// penulisan mixin menggunanak mixin dan menerapkannya menggunakan 'with'
