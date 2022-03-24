@@ -7,3 +7,6 @@ void main(List<String> args) {
   // D-ependency Inversion Principle
   
 }
+
+// tidak boleh mengimpelementasikan class yang sebenernya tidak diperlukan
+// class sebaiknya dibuat secara spesifik
