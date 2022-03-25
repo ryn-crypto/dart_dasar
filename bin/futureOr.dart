@@ -11,7 +11,7 @@ import 'package:test_dart/user.dart';
 
 class UserManager {
   FutureOr<int> GetUserAge(User user) async {
-    await IDatastorage.getUserAge(user);
+    // await IDatastorage.getUserAge(user);
   }
 }
 
