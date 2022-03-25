@@ -15,7 +15,20 @@ void main(List<String> args) {
   }
 
   //  ============================================================================================
-  // var
+  // var berfungsi untuk membuat object bertipe apa saja di awal, dan setealahnya tidak bisa di ubah type
+
+  var myVar = 12;
+  print(myVar);
+  // myVar = 'welcome';  <--- jika dirubah typenya maka akan error
+  myVar = 40; //  bisa di isi dengan type yang sama
+  print(myVar);
+
+  // namun jika tidak di deklarasikan langsung maka type data akan menjadi dynamic
+  var myvariabel;
+
+  myvariabel = 12;
+  myvariabel = 'nama saya';
+  // myvariabel akan berubah menjadi type data dynamic
 }
 
 class Person {
